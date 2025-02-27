@@ -40,3 +40,16 @@ const bikes = [
     peso: 10800
   }
 ];
+
+const bikesLight = []
+const bikesHeavy = []
+
+for (let i = 0; i < bikes.length; i++) {
+  if (bikes[i].peso > 12000) {
+    bikesHeavy.push(bikes[i]);
+  } else {
+    bikesLight.push(bikes[i]);
+  }
+}
+
+console.log(bikesLight);
