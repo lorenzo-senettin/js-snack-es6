@@ -50,3 +50,13 @@ const teams = [
     falliSubiti: 0
   }
 ];
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+teams.forEach(team => {
+  team.puntiFatti = getRandomInt(1, 100);
+  team.falliSubiti = getRandomInt(1, 50);
+});
