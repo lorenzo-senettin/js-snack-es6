@@ -60,3 +60,13 @@ teams.forEach(team => {
   team.puntiFatti = getRandomInt(1, 100);
   team.falliSubiti = getRandomInt(1, 50);
 });
+
+
+console.log(teams);
+
+const teamsFalli = teams.map(team => ({
+  nome: team.nome,
+  falliSubiti: team.falliSubiti
+}));
+
+console.log(teamsFalli);
